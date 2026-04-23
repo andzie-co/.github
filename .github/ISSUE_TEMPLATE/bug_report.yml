@@ -1,0 +1,38 @@
+name: Bug report
+description: Something is broken or behaving unexpectedly.
+labels: ["bug", "triage"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: One line describing what is broken.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Numbered steps. Include exact commands / URLs.
+      placeholder: |
+        1. Go to ...
+        2. Click ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected vs actual
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Version / commit SHA / OS / browser / whatever is relevant.
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / screenshots
+      description: Paste logs in a code block. Redact any secrets.
