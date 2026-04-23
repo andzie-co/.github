@@ -1,0 +1,9 @@
+# Fallback CODEOWNERS for andzie-co.
+# Individual repos override this by adding their own .github/CODEOWNERS.
+#
+# Platform owns community health files + workflow templates by default.
+
+*                   @andzie-co/platform
+/.github/           @andzie-co/platform
+/profile/           @andzie-co/platform
+/SECURITY.md        @andzie-co/owners @andzie-co/platform
